@@ -1,0 +1,26 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+  margin-top: 0;
+}
+
+.thumbnail img {
+  cursor: pointer;
+}
+
+#indicatorContainerWrap, #indicatorContainer{
+  display:inline-block;
+  position:relative;
+}
+
+.overall-mood{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

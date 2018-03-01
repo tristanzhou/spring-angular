@@ -1,0 +1,32 @@
+<md-dialog aria-label="What happened?">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>What happened?</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <div class="alert alert-danger" ng-show="error"><strong>{{error}}</strong></div>
+        <textarea ng-model="message" rows="10" cols="100" ng-change="messageChange()"></textarea>
+        <br/>
+        <span>{{messageLeft}}/{{messageMaxLength}}</span>
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <span flex></span>
+      <md-button ng-click="cancel()">
+       Maybe later
+      </md-button>
+      <md-button ng-click="send()">
+        That's it!
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

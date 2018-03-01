@@ -1,0 +1,13 @@
+<h1 class="text-center">{{title}}</h1>
+<div class="row text-center">
+	<div class="col-md-1"/>
+  <div class="col-md-2" ng-repeat="mood in moods">
+    <div class="thumbnail">
+      <img ng-src="img/faces/{{mood.mood}}.png" ng-click="openMoodMessage(mood.mood)">
+      <div class="caption text-center">
+        <h3>{{mood.desc}}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1"/>
+</div>
